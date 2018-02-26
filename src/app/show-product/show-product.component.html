@@ -1,0 +1,31 @@
+<!--component html goes here -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+</head>
+<body>
+    <br>
+<h3>--------Forms -------- </h3>
+<div class = "container">
+    <h1>Product Form</h1>
+    <form>
+       <div class = "form-group">
+           <label for = "productId">ID</label> 
+          <input type = "text" class = "form-control" id = "productId" required
+             [(ngModel)] = "model.productId" name = "productId">
+       </div>
+       
+       <div class = "form-group">
+          <label for = "productName">Name</label>
+          <input type = "text" class = "form-control" id = "productName"
+             [(ngModel)] = "model.productName" name = "productName">
+       </div>
+    </form>
+ </div>
+</body>
+</html>
