@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router }  from '@angular/router';  
+
 
 @Component({
     moduleId: module.id,
@@ -7,5 +9,12 @@ import { Component } from '@angular/core';
     styleUrls: ['app-inventory.component.scss']
 })
 export class AppInventoryComponent {
+    constructor(private _router: Router){} 
 
+    onBack(): void { 
+       this._router.navigate(['/Product']); 
+    } 
+    onBackMain(): void { 
+        this._router.navigate(['/']); 
+     } 
 }
